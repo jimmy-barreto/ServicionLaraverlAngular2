@@ -1,0 +1,14 @@
+<table class="table table-bordered">
+
+    <thead>
+        <th>Nombre</th>
+        <th>Duración</th>
+    </thead>
+
+    <tbody >
+        <tr *ngFor="let proyecto of proyectos">
+            <td>{{proyecto.nombre}}</td>
+            <td>{{proyecto.duracion}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,18 @@
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Nombre del Proyecto:</label>
+            <input [(ngModel)]="proyecto.nombre" type="text" class="form-control" name="nombre" placeholder="Nombre">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Duración del Proyecto (Meses):</label>
+            <input [(ngModel)]="proyecto.duracion" type="number" class="form-control" name="duracion" placeholder="0">
+        </div>
+    </div>
+    <div class="form-row">
+        <button  (click)="guardarProyecto()" class="btn btn-primary">Crear Proyecto</button>
+    </div>
+
+</form>
